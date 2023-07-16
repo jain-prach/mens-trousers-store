@@ -1,0 +1,9 @@
+/* Contact.css */
+.contact p {
+  display: flex;
+  align-items: center;
+}
+
+.contact p i {
+  margin-right: 0.5rem;
+}

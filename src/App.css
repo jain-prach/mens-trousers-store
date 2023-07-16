@@ -1,0 +1,81 @@
+/* Global styles */
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: var(--color-background);
+  color: var(--color-text);
+  margin: 0;
+  padding: 0;
+}
+
+/* Common element styles */
+h1 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+/* Navbar styles */
+.navbar {
+  background-color: #fff;
+  padding: 10px;
+}
+
+/* Header styles */
+.header {
+  background-color: var(--color-background);
+  padding: 20px;
+}
+
+/* About styles */
+.about {
+  background-color: #fff;
+  padding: 20px;
+}
+
+/* Bestseller styles */
+.bestseller {
+  background-color: var(--color-background);
+  padding: 20px;
+}
+
+/* Newarrival styles */
+.newarrival {
+  background-color: var(--color-background);
+  padding: 20px;
+}
+
+/* Contact styles */
+.contact {
+  background-color: var(--color-background);
+  padding: 20px;
+}
+
+/* Instagram styles */
+.instagram {
+  background-color: var(--color-background);
+  padding: 20px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .container {
+    padding: 10px;
+  }
+  
+  .header {
+    text-align: center;
+  }
+
+  .bestseller,
+  .newarrival,
+  .contact,
+  .instagram {
+    padding: 10px;
+  }
+}
