@@ -2,6 +2,16 @@ export const Content = {
   logo:"logo.jpg",
 };
 
+export const headerContent = {
+  title: "Men's Trousers Store",
+  slogan: "Discover the Perfect Fit",
+  ads: [
+    { id: 1, image: "product21.png", alt: "Ad 1" },
+    { id: 2, image: "product22.png", alt: "Ad 2" },
+    { id: 3, image: "product23.png", alt: "Ad 3" },
+  ],
+};
+
 export const aboutContent = {
   logo:"logo.jpg",
   title: "About Us",
@@ -18,47 +28,46 @@ export const aboutContent = {
 
 export const contactContent = {
   title: "Contact Us",
-  email: "contact@example.com",
+  email: "cansclad94@gmail.com",
   phone: "+1 123 456 7890",
-  address: "place address"
+  address: "C-117, 118, 119 City Centre - 1, Nr. Idgah Circle, Prem Darwaja Road, Asarwa, Ahmedabad-16"
 };
 
 export const bestsellerContent = {
   title: "Bestseller",
   products: [
-    { id: 1, name: "Product 1", image: "product1.jpg" },
-    { id: 2, name: "Product 2", image: "product2.jpg" },
-    { id: 3, name: "Product 3", image: "product3.jpg" },
-    { id: 4, name: "Product 4", image: "product4.jpg" },
-    { id: 5, name: "Product 5", image: "product5.jpg" },
-    { id: 6, name: "Product 6", image: "product6.jpg" },
-    { id: 7, name: "Product 7", image: "product7.jpg" },
-    { id: 8, name: "Product 8", image: "product8.jpg" },
-    { id: 9, name: "Product 9", image: "product9.jpg" },
+    { id: 1, name: "Product 1", image: "product21.jpg" },
+    { id: 2, name: "Product 2", image: "product22.jpg" },
+    { id: 3, name: "Product 3", image: "product23.jpg" },
+    { id: 4, name: "Product 4", image: "product24.jpg" },
+    { id: 5, name: "Product 5", image: "product25.jpg" },
+    { id: 6, name: "Product 6", image: "product26.jpg" },
+    { id: 7, name: "Product 7", image: "product27.jpg" },
+    { id: 8, name: "Product 8", image: "product28.jpg" },
+    { id: 9, name: "Product 9", image: "product29.jpg" },
   ],
 };
 
 export const newArrivalsContent = {
   title: "New Arrivals",
   products: [
-    { id: 1, name: "Product 1", image: "product1.jpg" },
-    { id: 2, name: "Product 2", image: "product2.jpg" },
-    { id: 3, name: "Product 3", image: "product3.jpg" },
-    { id: 4, name: "Product 4", image: "product4.jpg" },
-    { id: 5, name: "Product 5", image: "product5.jpg" },
-    { id: 6, name: "Product 6", image: "product6.jpg" },
-    { id: 7, name: "Product 7", image: "product7.jpg" },
-    { id: 8, name: "Product 8", image: "product8.jpg" },
-    { id: 9, name: "Product 9", image: "product9.jpg" },
+    { id: 1, name: "Product 1", image: "product31.jpg" },
+    { id: 2, name: "Product 2", image: "product32.jpg" },
+    { id: 3, name: "Product 3", image: "product33.jpg" },
+    { id: 4, name: "Product 4", image: "product34.jpg" },
+    { id: 5, name: "Product 5", image: "product35.jpg" },
+    { id: 6, name: "Product 6", image: "product36.jpg" },
+    { id: 7, name: "Product 7", image: "product37.jpg" },
+    { id: 8, name: "Product 8", image: "product38.jpg" },
+    { id: 9, name: "Product 9", image: "product39.jpg" },
   ],
 };
 
-export const headerContent = {
-  title: "Men's Trousers Store",
-  slogan: "Discover the Perfect Fit",
-  ads: [
-    { id: 1, image: "Ad1.png", alt: "Ad 1" },
-    { id: 2, image: "Ad2.png", alt: "Ad 2" },
-    { id: 3, image: "Ad3.png", alt: "Ad 3" },
+export const instaContent = {
+  title: "Instagram",
+  feed: [
+    { id: 1, image: "Feed1.png", alt: "Feed 1" },
+    { id: 2, image: "Feed2.png", alt: "Feed 2" },
+    { id: 3, image: "Feed3.png", alt: "Feed 3" },
   ],
 };

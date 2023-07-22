@@ -1,13 +1,21 @@
 import React from 'react';
 import "./Instagram.css";
-import { Link } from 'react-router-dom';
+import { instaContent } from '../../data/content';
 const Instagram = () => {
   return (
-    <div> 
-       {/* <Link to='https://www.instagram.com/jun_yuh/'></Link> */}
-    </div>
-     
-    
+    <section className="instagram" id="instagram">
+      <h1>{instaContent.title}</h1>
+      <div className="feed">
+        {instaContent.feed.map((feed) => (
+          <img
+            key={feed.id}
+            className="feed__item"
+            src={feed.image}
+            alt={feed.alt}
+          />
+        ))}
+      </div>
+    </section>
   )
 }
 
