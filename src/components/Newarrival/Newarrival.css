@@ -36,3 +36,21 @@
 .product-name {
   margin-top: 10px;
 }
+
+@media (max-width: 768px) {
+  .product-item {
+    width: 100%; /* Make product items take up full width on smaller screens */
+  }
+
+  .product-image {
+    max-width: 150px; /* Adjust product image size for smaller screens */
+    padding: 0.25rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .product-image {
+    max-width: 180px; /* Adjust product image size for wider screens */
+    padding: 0.25rem;
+  }
+}

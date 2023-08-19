@@ -84,11 +84,15 @@
   }
 
   .logo img {
-    width: 60px; /* Adjust the width as desired */
+    width: 50px; /* Adjust the width as desired */
   }
 
   .menu-icon {
     display: block; /* Show the menu icon on smaller screens */
+  }
+
+  .menu-icon span {
+    width: 20px; /* Adjust the menu icon size for smaller screens */
   }
 
   .nav-links {
@@ -108,5 +112,15 @@
   .nav-links li a {
     padding: 6px 12px;
     font-size: 12px; 
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .logo img {
+    width: 60px; /* Adjust the logo size for wider screens */
+  }
+
+  .menu-icon span {
+    width: 25px; /* Adjust the menu icon size for wider screens */
   }
 }

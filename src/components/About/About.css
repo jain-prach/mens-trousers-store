@@ -49,8 +49,49 @@ p {
 }
  */
 
-@media (max-width: 768px) {
-  .logo {
-    display: none;
+ @media (max-width: 768px) {
+  .about__content {
+    flex-direction: column-reverse;
+  }
+
+  .about .logo img {
+    max-width: 300px; /* Adjust the logo size for smaller screens */
+    margin-top: -0.5rem;
+    margin-bottom: -1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+
+  h3 {
+    font-size: 1.2rem;
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .about__content {
+    flex-direction: row; /* Restore original layout for wider screens */
+  }
+
+  .about .logo img {
+    width: 50%; /* Adjust the logo width for wider screens */
+    max-width: 400px; /* Set a larger maximum width */
+    margin-top: -0.5rem;
+    margin-bottom: -1rem;
+  }
+
+  h1 {
+    font-size: 2rem; /* Slightly increase the font size */
+    margin-bottom: 0.75rem;
+  }
+
+  h3 {
+    font-size: 1.3rem; /* Slightly increase the font size */
+    margin-top: 2rem;
+    margin-bottom: 0.75rem;
   }
 }
