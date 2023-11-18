@@ -4,12 +4,7 @@ export const Content = {
 
 export const headerContent = {
   title: "Men's Trousers Store",
-  slogan: "Discover the Perfect Fit",
-  ads: [
-    { id: 1, image: "product21.png", alt: "Ad 1" },
-    { id: 2, image: "product22.png", alt: "Ad 2" },
-    { id: 3, image: "product23.png", alt: "Ad 3" },
-  ],
+  slogan: "Discover the Perfect Fit",	
 };
 
 export const aboutContent = {
@@ -57,17 +52,17 @@ export const newArrivalsContent = {
     { id: 4, name: "Product 4", image: "product34.jpg" },
     { id: 5, name: "Product 5", image: "product35.jpg" },
     { id: 6, name: "Product 6", image: "product36.jpg" },
-    { id: 7, name: "Product 7", image: "product37.jpg" },
-    { id: 8, name: "Product 8", image: "product38.jpg" },
-    { id: 9, name: "Product 9", image: "product39.jpg" },
+    { id: 7, name: "Product 7", image: "product19.jpg" },
+    { id: 8, name: "Product 8", image: "product18.jpg" },
+    { id: 9, name: "Product 9", image: "product17.jpg" },
   ],
 };
 
 export const instaContent = {
   title: "Instagram",
   feed: [
-    { id: 1, image: "Feed1.png", alt: "Feed 1" },
-    { id: 2, image: "Feed2.png", alt: "Feed 2" },
-    { id: 3, image: "Feed3.png", alt: "Feed 3" },
+    { id: 1, image: "feed1.png", alt: "Feed 1" },
+    { id: 2, image: "feed2.png", alt: "Feed 2" },
+    { id: 3, image: "feed3.png", alt: "Feed 3" },
   ],
 };

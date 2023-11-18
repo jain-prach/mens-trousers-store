@@ -6,4 +6,9 @@
 
 .contact p i {
   margin-right: 0.5rem;
+  transition: transform 0.3s ease-in-out; /* Apply transition for smooth bounce */
+}
+
+.contact p i:hover {
+  transform: translateY(-5px); /* Adjust the value for the desired bounce effect */
 }

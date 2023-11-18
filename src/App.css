@@ -1,6 +1,6 @@
 /* Global styles */
 body {
-  font-family: 'Helvetica Neue', Arial, sans-serif;
+  font-family: var(--font-alt);
   background-color: var(--color-background);
   color: var(--color-text);
   margin: 0;

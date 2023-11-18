@@ -8,7 +8,7 @@ const Bestseller = () => {
     dots: true,
     infinite: true,
     speed: 500,
-    slidesToShow: 5,
+    slidesToShow: 4, // Show 4 images per slide
     slidesToScroll: 1,
     responsive: [
       {

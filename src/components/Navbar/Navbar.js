@@ -9,6 +9,14 @@ const Navbar = () => {
     setShowMenu(!showMenu);
   };
 
+  const hideMenu = () => {
+    setShowMenu(false);
+  };
+
+  const handleLinkClick = () => {
+    hideMenu();
+  };
+
   return (
     <nav className="navbar">
       <div className="navbar-left">
@@ -19,23 +27,23 @@ const Navbar = () => {
         </div>
       </div>
       <div className={`navbar-right ${showMenu ? 'active' : ''}`}>
-        <div className={`menu-icon ${showMenu ? 'active' : ''}`} onClick={toggleMenu}>
+        <div className="menu-icon" onClick={toggleMenu}>
           <span></span>
           <span></span>
           <span></span>
         </div>
         <ul className={`nav-links ${showMenu ? 'show' : ''}`}>
           <li>
-            <a href="#home">Home</a>
+            <a href="#home" onClick={handleLinkClick}>Home</a>
           </li>
           <li>
-            <a href="#about">About</a>
+            <a href="#about" onClick={handleLinkClick}>About</a>
           </li>
           <li>
-            <a href="#bestseller">Collection</a>
+            <a href="#bestseller" onClick={handleLinkClick}>Collection</a>
           </li>
           <li>
-            <a href="#contact">Contact</a>
+            <a href="#contact" onClick={handleLinkClick}>Contact</a>
           </li>
         </ul>
       </div>

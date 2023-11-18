@@ -10,7 +10,7 @@ const Instagram = () => {
           <img
             key={feed.id}
             className="feed__item"
-            src={feed.image}
+            src={`assets/${feed.image}`}
             alt={feed.alt}
           />
         ))}

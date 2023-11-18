@@ -5,12 +5,14 @@
   justify-content: space-between;
   background-color: #fff;
   padding: 1rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
+  display:  flex-wrap; /* Allow the navbar to wrap around content */
 }
 
 .navbar-left {
   display: flex;
   align-items: center;
+  flex-grow: 1; /* Allows the logo to take up remaining space */
 }
 
 .navbar-right {
@@ -52,6 +54,7 @@
   border-radius: 5px;
   font-size: 18px;
   font-weight: 500;
+  transition: color 0.3s ease-in-out, background 0.3s ease-in-out; /* Add transition properties */
 }
 
 .nav-links li a:hover {
@@ -75,8 +78,22 @@
 
 @media screen and (max-width: 768px) {
   .navbar {
-    flex-direction: column;
+    flex-direction: row; /* Stack items vertically on smaller screens */
     padding: 0.5rem;
+    }
+
+  .navbar-left,
+  .navbar-right {
+    width: 100%; /* Make each column take up full width */
+    text-align: center; /* Center content within columns */
+  }
+  
+  .navbar-right {
+    flex-basis: 50%; /* Each column takes up 50% width on smaller screens */
+    text-align: right; /* Align content to the right */
+    display: flex;
+    justify-content: flex-end; /* Align items to the end (right side) */
+    align-items: center; /* Align items vertically */
   }
 
   .logo {
@@ -84,11 +101,12 @@
   }
 
   .logo img {
-    width: 50px; /* Adjust the width as desired */
+    width: 80px; /* Adjust the width as desired */
   }
 
   .menu-icon {
     display: block; /* Show the menu icon on smaller screens */
+    margin-right: 0.5rem; /* Add some spacing between the icon and the content */
   }
 
   .menu-icon span {
@@ -99,6 +117,7 @@
     flex-direction: column;
     align-items: center;
     display: none; /* Initially hide the navigation links */
+    transition: all 0.3s ease; /* Add a smooth transition effect */
   }
 
   .nav-links.show {

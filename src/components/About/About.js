@@ -1,10 +1,38 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import { aboutContent } from '../../data/content';
 import './About.css';
 
 const About = () => {
+  const aboutRef = useRef(null);
+
+  useEffect(() => {
+    const aboutSection = aboutRef.current;
+    const options = {
+      root: null,
+      threshold: 0.2, // Adjust the threshold as needed
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('about-visible'); // Apply the CSS animation when the element is visible
+        }
+      });
+    }, options);
+
+    if (aboutSection) {
+      observer.observe(aboutSection);
+    }
+
+    return () => {
+      if (aboutSection) {
+        observer.unobserve(aboutSection);
+      }
+    };
+  }, []);
+
   return (
-    <section className="about"  id="about">
+    <section className="about" id="about" ref={aboutRef}>
       <div className="about__heading">
         <h1>{aboutContent.title}</h1>
       </div>
@@ -20,18 +48,9 @@ const About = () => {
           <p>{aboutContent.conclusion}</p>
         </div>
         <div className="logo">
-          <img src={`assets/${aboutContent.logo}`} alt="Logo"/>
+          <img src={`assets/${aboutContent.logo}`} alt="Logo" />
         </div>
       </div>
-      {/* <h3>Testimonials</h3>
-      <div className="testimonials">
-        {aboutContent.testimonials.map((testimonial) => (
-          <div key={testimonial.id}>
-            <p>{testimonial.message}</p>
-            <p>- {testimonial.author}</p>
-          </div>
-        ))}
-      </div> */}
     </section>
   );
 };

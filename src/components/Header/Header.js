@@ -1,18 +1,23 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { headerContent } from '../../data/content';
 import './Header.css';
 
 const Header = () => {
+  useEffect(() => {
+    document.querySelector('.header').style.opacity = 1; // Ensure opacity is set to 1 after component mounts
+  }, []);
+
+  const headerStyle = {
+    backgroundImage: `url('assets/background.jpg')`, // Replace with the correct path
+  };
+
   return (
-    <header className="header" id="home">
-      <h1>{headerContent.title}</h1>
-      <p>{headerContent.slogan}</p>
-      <div className="ad-container">
-        {headerContent.ads.map((ad) => (
-          <img key={ad.id} src={`assets/${ad.image}`} alt={ad.alt} />
-        ))}
+    <header className="header" id="home" style={headerStyle}>
+      <div className="header-content">
+        <h1>{headerContent.title}</h1>
+        <p>{headerContent.slogan}</p>
+        <a href="#bestseller" className="button">Shop Now</a>
       </div>
-      <a href="#bestseller" className="button">Shop Now</a>
     </header>
   );
 };

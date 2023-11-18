@@ -8,6 +8,19 @@
   text-align: justify;
 }
 
+.about__heading,
+.about__content div {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.8s ease-out, transform 0.8s ease-out;
+}
+
+.about-visible .about__heading,
+.about-visible .about__content div {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 .logo {
   text-align: center;
   margin-bottom: 1rem;
@@ -36,20 +49,7 @@ p {
   margin-bottom: 1rem;
 }
 
-/* .testimonials {
-  margin-top: 1rem;
-}
-
-.testimonials div {
-  margin-bottom: 1rem;
-}
-
-.testimonials p:last-child {
-  font-style: italic;
-}
- */
-
- @media (max-width: 768px) {
+@media (max-width: 768px) {
   .about__content {
     flex-direction: column-reverse;
   }

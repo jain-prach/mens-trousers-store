@@ -1,4 +1,5 @@
 /* Newarrival styles */
+
 .newarrival {
   padding: 1rem;
   margin: 0rem;
@@ -19,18 +20,21 @@
 
 .product-image {
   width: 100%;
-  max-width: 200px;
+  max-width: 100%; 
   height: auto;
   border: 5px solid var(--color-primary);
-  padding: .5rem;
+  padding: .5rem .5rem;
   box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--color-primary);
 }
 
 .product-image img {
-  width: 100%;
-  height: auto;
+  width: 22rem;
+  height: 13rem;
   object-fit: cover;
-  max-height: 200px;
 }
 
 .product-name {
@@ -45,6 +49,8 @@
   .product-image {
     max-width: 150px; /* Adjust product image size for smaller screens */
     padding: 0.25rem;
+    background-color: var(--color-background);
+    border: 0px;
   }
 }
 
@@ -52,5 +58,7 @@
   .product-image {
     max-width: 180px; /* Adjust product image size for wider screens */
     padding: 0.25rem;
+    background-color: var(--color-background);
+    border: 0px;
   }
 }
