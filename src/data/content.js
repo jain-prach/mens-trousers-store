@@ -1,5 +1,5 @@
 export const Content = {
-  logo:"logo.jpg",
+  logo:"logo.png",
 };
 
 export const headerContent = {
@@ -8,7 +8,7 @@ export const headerContent = {
 };
 
 export const aboutContent = {
-  logo:"logo.jpg",
+  logo:"logo.png",
   title: "About Us",
   description: "Welcome to Can's Clad, your ultimate destination for premium cotton trousers and casual shirts! Situated in Ahmedabad, our company boasts an impressive 24-year legacy in manufacturing, selling, and exporting top-notch cotton trousers, with a special emphasis on quality, pricing, and impeccable finishing.",
   services: "At Can's Clad, we take pride in offering our esteemed customers a wide array of choices. Whether you prefer our own brand-labelled products, FOB services, or the option of customizing your order with your own label, we've got you covered.",
