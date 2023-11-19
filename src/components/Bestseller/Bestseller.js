@@ -23,7 +23,7 @@ const Bestseller = () => {
   return (
     <section className="bestseller" id="bestseller">
       <h1>{bestsellerContent.title}</h1>
-      <Slider {...settings}>
+      <Slider {...settings} className="custom-slider">
         {bestsellerContent.products.map((product) => (
           <div key={product.id} className="product-item">
             <div className="product-content">

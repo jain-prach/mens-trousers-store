@@ -23,7 +23,7 @@ const Newarrival = () => {
   return (
     <section className="newarrival">
       <h1>{newArrivalsContent.title}</h1>
-      <Slider {...settings}>
+      <Slider {...settings} className="custom-slider">
         {newArrivalsContent.products.map((product) => (
           <div key={product.id} className="product-item">
             <div className="product-content">
