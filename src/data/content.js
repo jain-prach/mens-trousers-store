@@ -61,8 +61,8 @@ export const newArrivalsContent = {
 export const instaContent = {
   title: "Instagram",
   feed: [
-    { id: 1, image: "feed1.png", alt: "Feed 1" },
-    { id: 2, image: "feed2.png", alt: "Feed 2" },
-    { id: 3, image: "feed3.png", alt: "Feed 3" },
+    { id: 1, image: "feed1.png", alt: "Feed 1", instagramLink: "https://www.instagram.com/cansclad94/" },
+    { id: 2, image: "feed2.png", alt: "Feed 2", instagramLink: "https://www.instagram.com/cansclad94/" },
+    { id: 3, image: "feed3.png", alt: "Feed 3", instagramLink: "https://www.instagram.com/cansclad94/" },
   ],
 };
