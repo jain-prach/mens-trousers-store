@@ -12,7 +12,7 @@ const Contact = () => {
   };
 
   return (
-    <section className="contact">
+    <section className="contact" id="contact">
       <h1>{contactContent.title}</h1>
       <p>
         <i className="fas fa-envelope" onMouseEnter={handleIconHover} onMouseLeave={handleIconLeave}></i> Email: {contactContent.email}
