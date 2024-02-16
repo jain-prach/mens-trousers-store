@@ -24,7 +24,7 @@ export const aboutContent = {
 export const contactContent = {
   title: "Contact Us",
   email: "cansclad94@gmail.com",
-  phone: "+1 123 456 7890",
+  phone: "+91 81605 59140",
   address: "C-117, 118, 119 City Centre - 1, Nr. Idgah Circle, Prem Darwaja Road, Asarwa, Ahmedabad-16"
 };
 
