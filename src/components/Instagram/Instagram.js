@@ -19,7 +19,7 @@ const Instagram = () => {
           </div>
         ))}
         <div className="see-more-mobile">
-          <a href="https://www.instagram.com/cansclad94/" className="see-more-text" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/c2c_legwear" className="see-more-text" target="_blank" rel="noopener noreferrer">
             See more
           </a>
         </div>
